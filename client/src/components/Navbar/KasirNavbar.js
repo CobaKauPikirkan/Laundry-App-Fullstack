@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css';
-const KasirSidebar = () => {
+const KasirNavbar = () => {
     const [click , setClick] = useState(false);
     const [button, setButton] =useState(true);
 
@@ -67,4 +67,4 @@ const KasirSidebar = () => {
   )
 }
 
-export default KasirSidebar
+export default KasirNavbar

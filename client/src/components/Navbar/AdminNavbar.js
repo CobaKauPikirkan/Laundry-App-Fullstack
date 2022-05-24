@@ -4,7 +4,7 @@ import { Button } from "./Button";
 import './Navbar.css';
 
 
-function AdminSidebar() {
+function AdminNavbar() {
     const [click , setClick] = useState(false);
     const [button, setButton] =useState(true);
 
@@ -84,4 +84,4 @@ function AdminSidebar() {
   
 }
 
-export default AdminSidebar;
+export default AdminNavbar;

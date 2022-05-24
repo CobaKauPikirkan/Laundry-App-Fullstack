@@ -22,16 +22,18 @@ import { useEffect } from 'react';
 
 
 import Footer from './components/Navbar/Footer';
-import AdminNavbar from './components/Navbar/AdminNavbar';
-import KasirSidebar from './components/Navbar/KasirSidebar';
+
 import Laporan from './components/Laporan';
 import Logout from './components/Logout';
 import AddUser from './components/AddUser';
 import EditUser from './components/EditUser';
 import UserList from './components/User';
 
-import OwnerSidebar from './components/Navbar/OwnerSidebar';
+
 import Awal from './components/Navbar/Awal';
+import KasirNavbar from './components/Navbar/KasirNavbar';
+import OwnerNavbar from './components/Navbar/OwnerNavbar';
+import AdminNavbar from './components/Navbar/AdminNavbar';
 
 function Menu() {
     const history = useNavigate();
@@ -48,8 +50,8 @@ function Menu() {
       {/* <Sidebar /> */}
       {selectedRole === "admin" && <AdminNavbar/>} 
       {/* ini buat ngatur hak akses ntar featurnya di hidden */}
-      {selectedRole === "kasir" && <KasirSidebar/>}
-      {selectedRole === "owner" && <OwnerSidebar/>}
+      {selectedRole === "kasir" && <KasirNavbar/>}
+      {selectedRole === "owner" && <OwnerNavbar/>}
       
           
           <div className="main-wrapper">
